@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RapidFlow Plumbing Co. — 24/7 Plumbers in Austin, TX | Upfront Flat-Rate Pricing</title>
+<meta name="description" content="RapidFlow Plumbing Co. — licensed Austin plumbers for emergencies, drain cleaning, water heaters and repairs. Upfront flat-rate pricing, same-day service, 2-year workmanship warranty. Call (512) 555-0147.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#0a2239; --navy:#0e2f4c; --navy-2:#123c61;
+  --orange:#f4631e; --orange-dark:#d94f10;
+  --paper:#f7f5f0; --card:#ffffff; --steel:#e8edf1; --line:#d9dee3;
+  --text:#22303c; --muted:#5b6b78;
+  --radius:10px; --radius-s:6px;
+  --shadow:0 10px 30px rgba(10,34,57,.14);
+  --shadow-s:0 4px 14px rgba(10,34,57,.10);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Barlow',system-ui,sans-serif;color:var(--text);background:var(--paper);font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding:0 22px}
+h1,h2,h3,.cond{font-family:'Barlow Condensed','Barlow',sans-serif;text-transform:uppercase;letter-spacing:.01em;color:var(--ink);line-height:1.05}
+h2{font-size:clamp(30px,4.4vw,44px);font-weight:700}
+h3{font-size:21px;font-weight:600}
+.eyebrow{font-family:'Barlow Condensed',sans-serif;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--orange);font-size:14px;margin-bottom:10px}
+.btn{display:inline-flex;align-items:center;gap:9px;font-weight:700;font-size:16px;padding:14px 26px;border-radius:var(--radius-s);text-decoration:none;border:2px solid transparent;cursor:pointer;transition:transform .15s ease,background .15s ease,box-shadow .15s ease}
+.btn:active{transform:translateY(1px)}
+.btn-call{background:var(--orange);color:#fff;box-shadow:0 8px 20px rgba(244,99,30,.35)}
+.btn-call:hover{background:var(--orange-dark)}
+.btn-ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.55)}
+.btn-ghost:hover{border-color:#fff}
+.btn-dark{background:var(--ink);color:#fff}
+.btn-dark:hover{background:var(--navy-2)}
+:focus-visible{outline:3px solid var(--orange);outline-offset:2px}
+
+/* Top bar */
+.topbar{background:var(--ink);color:#cfdce8;font-size:14px}
+.topbar .wrap{display:flex;justify-content:space-between;align-items:center;gap:14px;padding-top:8px;padding-bottom:8px;flex-wrap:wrap}
+.topbar strong{color:#fff}
+.topbar .tb-right{display:flex;gap:20px;flex-wrap:wrap}
+.topbar a{color:#ffb287;text-decoration:none;font-weight:600}
+
+/* Header */
+header.site{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.97);border-bottom:1px solid var(--line);transition:box-shadow .2s ease}
+header.site.scrolled{box-shadow:var(--shadow-s)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:14px 0}
+.logo{display:flex;align-items:center;gap:11px;text-decoration:none}
+.logo-mark{width:44px;height:44px;border-radius:9px;background:var(--navy);display:grid;place-items:center;flex:none}
+.logo-name{font-family:'Barlow Condensed',sans-serif;font-size:25px;font-weight:700;color:var(--ink);text-transform:uppercase;line-height:1}
+.logo-name span{color:var(--orange)}
+.logo-sub{font-size:11.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.nav-links{display:flex;gap:30px;list-style:none}
+.nav-links a{text-decoration:none;font-weight:600;font-size:15.5px;color:var(--ink)}
+.nav-links a:hover{color:var(--orange)}
+.nav-cta{display:flex;align-items:center;gap:14px}
+.nav-phone{text-decoration:none;font-weight:700;color:var(--ink);font-size:16px;white-space:nowrap}
+.nav-phone small{display:block;font-size:11.5px;color:var(--muted);font-weight:600;letter-spacing:.08em;text-transform:uppercase}
+.burger{display:none;background:none;border:0;cursor:pointer;padding:8px}
+.burger span{display:block;width:24px;height:3px;background:var(--ink);margin:5px 0;border-radius:2px}
+
+/* Hero */
+.hero{background:linear-gradient(160deg,var(--ink) 0%,var(--navy) 58%,var(--navy-2) 100%);color:#e8eef4;position:relative;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;padding-top:64px;padding-bottom:72px;align-items:center;position:relative;z-index:1}
+.hero h1{color:#fff;font-size:clamp(42px,5.6vw,64px);font-weight:700}
+.hero h1 .hl{color:var(--orange)}
+.hero p.lede{font-size:19px;color:#c6d5e2;max-width:34em;margin:18px 0 28px}
+.hero-cta{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+.hero-note{font-size:14px;color:#9fb4c6;margin-top:14px}
+.hero-chips{display:flex;gap:10px;flex-wrap:wrap;margin-top:30px}
+.chip{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);padding:8px 14px;border-radius:999px;font-size:14px;font-weight:600;color:#eaf1f7}
+.chip svg{flex:none}
+.hero-media{position:relative}
+.hero-media img{border-radius:14px;box-shadow:0 24px 50px rgba(0,0,0,.35);aspect-ratio:4/3.4;object-fit:cover;width:100%}
+.badge-card{position:absolute;background:#fff;color:var(--text);border-radius:var(--radius);box-shadow:var(--shadow);padding:13px 17px;display:flex;gap:11px;align-items:center}
+.badge-card .bc-big{font-family:'Barlow Condensed',sans-serif;font-size:22px;font-weight:700;color:var(--ink);line-height:1}
+.badge-card .bc-small{font-size:12.5px;color:var(--muted);font-weight:600}
+.badge-rating{top:18px;left:-24px}
+.badge-warranty{bottom:20px;right:-14px}
+.stars{color:var(--orange);font-size:14px;letter-spacing:2px}
+
+/* Trust strip */
+.trust{background:#fff;border-bottom:1px solid var(--line)}
+.trust .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;padding-top:22px;padding-bottom:22px}
+.trust-item{text-align:center;padding:6px 8px}
+.trust-item .t-num{font-family:'Barlow Condensed',sans-serif;font-size:30px;font-weight:700;color:var(--ink)}
+.trust-item .t-num em{font-style:normal;color:var(--orange)}
+.trust-item .t-lab{font-size:13.5px;color:var(--muted);font-weight:600;text-transform:uppercase;letter-spacing:.06em}
+
+/* Sections */
+section.block{padding:78px 0}
+.sec-head{max-width:640px;margin-bottom:42px}
+.sec-head p{color:var(--muted);margin-top:10px;font-size:17.5px}
+.sec-head.center{margin-left:auto;margin-right:auto;text-align:center}
+
+/* Services */
+.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.svc{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:28px 26px;transition:transform .18s ease,box-shadow .18s ease}
+.svc:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+.svc-icon{width:52px;height:52px;border-radius:12px;background:#fdf0e7;display:grid;place-items:center;margin-bottom:16px}
+.svc p{color:var(--muted);font-size:15.5px;margin:8px 0 14px}
+.svc .svc-price{font-weight:700;color:var(--ink);font-size:15px}
+.svc .svc-price span{color:var(--orange)}
+.svc a.svc-link{display:inline-block;margin-top:10px;font-weight:700;color:var(--orange);text-decoration:none;font-size:15px}
+.svc a.svc-link:hover{text-decoration:underline}
+
+/* Emergency band */
+.emergency{background:var(--orange);color:#fff}
+.emergency .wrap{display:flex;align-items:center;justify-content:space-between;gap:26px;padding-top:34px;padding-bottom:34px;flex-wrap:wrap}
+.emergency h2{color:#fff;font-size:clamp(26px,3.6vw,38px)}
+.emergency p{color:#ffe3d3;font-weight:500}
+.btn-white{background:#fff;color:var(--orange-dark)}
+.btn-white:hover{background:#fff3ec}
+
+/* Why us */
+.why .wrap{display:grid;grid-template-columns:.95fr 1.05fr;gap:52px;align-items:center}
+.why-media img{border-radius:14px;box-shadow:var(--shadow);aspect-ratio:4/3.1;object-fit:cover;width:100%}
+.why-list{list-style:none;margin-top:24px;display:grid;gap:16px}
+.why-list li{display:flex;gap:13px;align-items:flex-start}
+.why-list .ck{flex:none;width:26px;height:26px;border-radius:50%;background:#e7f4ec;display:grid;place-items:center;margin-top:2px}
+.why-list strong{color:var(--ink)}
+.why-list p{color:var(--muted);font-size:15.5px}
+
+/* Steps */
+.steps{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.steps-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.step{padding:28px 26px;border:1px solid var(--line);border-radius:var(--radius);background:var(--paper)}
+.step .s-num{font-family:'Barlow Condensed',sans-serif;font-size:44px;font-weight:700;color:var(--orange);line-height:1}
+.step h3{margin:10px 0 8px}
+.step p{color:var(--muted);font-size:15.5px}
+
+/* Pricing */
+.pricing-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.price-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:30px 28px;text-align:left}
+.price-card .p-job{font-size:14px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.price-card .p-amt{font-family:'Barlow Condensed',sans-serif;font-size:46px;font-weight:700;color:var(--ink);margin:8px 0 2px}
+.price-card .p-amt small{font-size:17px;color:var(--muted);font-family:'Barlow',sans-serif;font-weight:600}
+.price-card p{color:var(--muted);font-size:15px;margin-top:8px}
+.pricing-note{text-align:center;color:var(--muted);margin-top:24px;font-size:15px}
+
+/* Reviews */
+.reviews{background:var(--ink)}
+.reviews h2{color:#fff}
+.reviews .sec-head p{color:#a9bfd2}
+.reviews-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.rev{background:#10293f;border:1px solid #1d415f;border-radius:var(--radius);padding:28px 26px;color:#dbe6ef}
+.rev .stars{margin-bottom:12px}
+.rev p{font-size:16px}
+.rev-who{display:flex;align-items:center;gap:12px;margin-top:18px}
+.avatar{width:42px;height:42px;border-radius:50%;background:var(--orange);color:#fff;display:grid;place-items:center;font-weight:700;font-size:16px;flex:none}
+.rev-who .rw-name{font-weight:700;color:#fff;font-size:15.5px}
+.rev-who .rw-meta{font-size:13px;color:#8fa9bf}
+
+/* Area + FAQ */
+.area-faq .wrap{display:grid;grid-template-columns:1fr 1fr;gap:52px}
+.area-chips{display:flex;flex-wrap:wrap;gap:9px;margin-top:20px}
+.area-chips span{background:#fff;border:1px solid var(--line);border-radius:999px;padding:7px 15px;font-size:14.5px;font-weight:600;color:var(--ink)}
+.faq-item{background:#fff;border:1px solid var(--line);border-radius:var(--radius);margin-bottom:12px;overflow:hidden}
+.faq-q{width:100%;background:none;border:0;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:14px;text-align:left;padding:18px 22px;font-family:'Barlow',sans-serif;font-size:16.5px;font-weight:700;color:var(--ink)}
+.faq-q .fx{font-size:22px;color:var(--orange);font-weight:700;transition:transform .2s ease;flex:none}
+.faq-item.open .fx{transform:rotate(45deg)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .25s ease}
+.faq-a p{padding:0 22px 19px;color:var(--muted);font-size:15.5px}
+
+/* Booking */
+.booking{background:#fff;border-top:1px solid var(--line)}
+.booking .wrap{display:grid;grid-template-columns:1fr 1.1fr;gap:52px;align-items:start}
+.book-points{list-style:none;margin-top:22px;display:grid;gap:13px}
+.book-points li{display:flex;gap:11px;align-items:flex-start;color:var(--text)}
+.book-points svg{flex:none;margin-top:3px}
+form.book{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:30px;box-shadow:var(--shadow-s)}
+form.book h3{font-size:24px;margin-bottom:4px}
+form.book .f-sub{color:var(--muted);font-size:15px;margin-bottom:20px}
+.f-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.f-group{margin-bottom:14px}
+.f-group label{display:block;font-weight:600;font-size:14.5px;color:var(--ink);margin-bottom:6px}
+.f-group input,.f-group select,.f-group textarea{width:100%;padding:12px 14px;border:1.5px solid var(--line);border-radius:var(--radius-s);font-family:'Barlow',sans-serif;font-size:16px;background:#fff;color:var(--text)}
+.f-group input:focus,.f-group select:focus,.f-group textarea:focus{border-color:var(--orange);outline:none;box-shadow:0 0 0 3px rgba(244,99,30,.18)}
+form.book .btn{width:100%;justify-content:center}
+.form-ok{display:none;background:#e7f4ec;border:1px solid #bfe3cd;color:#14532d;border-radius:var(--radius-s);padding:14px 16px;font-weight:600;margin-top:16px}
+.form-ok.show{display:block}
+
+/* Footer */
+footer{background:var(--ink);color:#a9bfd2;padding:56px 0 0}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.2fr;gap:36px;padding-bottom:42px}
+footer h4{font-family:'Barlow Condensed',sans-serif;color:#fff;text-transform:uppercase;font-size:18px;letter-spacing:.05em;margin-bottom:14px}
+footer ul{list-style:none;display:grid;gap:9px;font-size:15px}
+footer a{text-decoration:none}
+footer a:hover{color:#ffb287}
+.foot-bottom{border-top:1px solid #1d415f;padding:18px 0;font-size:13.5px;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
+.demo-note{color:#7e97ad}
+
+/* Mobile call bar */
+.callbar{display:none;position:fixed;left:0;right:0;bottom:0;z-index:60;background:var(--ink);padding:10px 14px;gap:10px}
+.callbar a{flex:1;text-align:center;padding:13px;border-radius:var(--radius-s);font-weight:700;text-decoration:none;font-size:16px}
+.callbar .cb-call{background:var(--orange);color:#fff}
+.callbar .cb-book{background:#fff;color:var(--ink)}
+
+/* Reveal */
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .55s ease,transform .55s ease}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+
+@media(max-width:1020px){
+  .services-grid,.steps-grid,.pricing-grid,.reviews-grid{grid-template-columns:repeat(2,1fr)}
+  .foot-grid{grid-template-columns:1fr 1fr}
+  .badge-rating{left:8px}.badge-warranty{right:8px}
+}
+@media(max-width:860px){
+  .nav-links{display:none;position:absolute;top:100%;left:0;right:0;background:#fff;flex-direction:column;gap:0;padding:8px 22px 16px;border-bottom:1px solid var(--line);box-shadow:var(--shadow-s)}
+  .nav-links.open{display:flex}
+  .nav-links li{padding:9px 0;border-bottom:1px solid var(--steel)}
+  .nav-links li:last-child{border-bottom:0}
+  .burger{display:block}
+  .nav-phone{display:none}
+  .hero .wrap,.why .wrap,.area-faq .wrap,.booking .wrap{grid-template-columns:1fr}
+  .hero .wrap{padding-top:44px;padding-bottom:52px}
+  .trust .wrap{grid-template-columns:repeat(2,1fr)}
+  .callbar{display:flex}
+  body{padding-bottom:64px}
+}
+@media(max-width:560px){
+  .services-grid,.steps-grid,.pricing-grid,.reviews-grid{grid-template-columns:1fr}
+  .f-row{grid-template-columns:1fr}
+  .foot-grid{grid-template-columns:1fr}
+  section.block{padding:56px 0}
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <div><strong>24/7 Emergency Service</strong> — we answer in under 60 seconds</div>
+    <div class="tb-right">
+      <span>Licensed &amp; Insured · TX Master Plumber Lic. #M-42817</span>
+      <a href="tel:+15125550147">Call (512) 555-0147</a>
+    </div>
+  </div>
+</div>
+
+<header class="site" id="siteHeader">
+  <div class="wrap nav">
+    <a class="logo" href="#top" aria-label="RapidFlow Plumbing Co. home">
+      <span class="logo-mark" aria-hidden="true">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M12 2.7c3.2 3.9 6 7.3 6 10.6a6 6 0 1 1-12 0c0-3.3 2.8-6.7 6-10.6Z" fill="#f4631e"/><path d="M9.2 13.6a2.9 2.9 0 0 0 2.1 3.4" stroke="#fff" stroke-width="1.8" stroke-linecap="round"/></svg>
+      </span>
+      <span>
+        <span class="logo-name">Rapid<span>Flow</span></span><br>
+        <span class="logo-sub">Plumbing Co. · Austin</span>
+      </span>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#why">Why Us</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a class="nav-phone" href="tel:+15125550147"><small>Call or text anytime</small>(512) 555-0147</a>
+      <a class="btn btn-call" href="#book" style="padding:11px 20px">Book Online</a>
+      <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow" style="color:#ffb287">Austin's Same-Day Plumbers</p>
+      <h1>A plumbing problem?<br>Fixed <span class="hl">today</span> — at a price you approve first.</h1>
+      <p class="lede">Licensed local plumbers for leaks, clogs, water heaters and full repipes. You get a flat-rate quote before we start — no hourly meters, no surprises on the bill.</p>
+      <div class="hero-cta">
+        <a class="btn btn-call" href="tel:+15125550147">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.13.96.36 1.9.7 2.8a2 2 0 0 1-.45 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.45c.9.34 1.84.57 2.8.7A2 2 0 0 1 22 16.9z"/></svg>
+          Call (512) 555-0147</a>
+        <a class="btn btn-ghost" href="#book">Book a Visit</a>
+      </div>
+      <p class="hero-note">Average arrival today: <strong style="color:#fff">under 2 hours</strong> in the Austin metro.</p>
+      <div class="hero-chips">
+        <span class="chip"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#f4631e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Upfront flat-rate pricing</span>
+        <span class="chip"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#f4631e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> 2-year workmanship warranty</span>
+        <span class="chip"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#f4631e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Licensed &amp; insured</span>
+      </div>
+    </div>
+    <div class="hero-media">
+      <img src="hero.jpg" alt="RapidFlow plumber repairing pipes under a kitchen sink">
+      <div class="badge-card badge-rating">
+        <div>
+          <div class="stars" aria-hidden="true">★★★★★</div>
+          <div class="bc-big">4.9 / 5</div>
+          <div class="bc-small">2,300+ Austin reviews</div>
+        </div>
+      </div>
+      <div class="badge-card badge-warranty">
+        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#f4631e" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-3.6 8-10V5l-8-3-8 3v7c0 6.4 8 10 8 10z"/><path d="m9 11.5 2 2 4-4.5"/></svg>
+        <div>
+          <div class="bc-big">2-Year Warranty</div>
+          <div class="bc-small">On parts &amp; labor</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST STRIP -->
+<div class="trust">
+  <div class="wrap">
+    <div class="trust-item"><div class="t-num">18<em>+</em></div><div class="t-lab">Years in Austin</div></div>
+    <div class="trust-item"><div class="t-num">24<em>/7</em></div><div class="t-lab">Emergency Service</div></div>
+    <div class="trust-item"><div class="t-num">12k<em>+</em></div><div class="t-lab">Jobs Completed</div></div>
+    <div class="trust-item"><div class="t-num">$0</div><div class="t-lab">Trip Fee With Repair</div></div>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section class="block" id="services">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow">What We Fix</p>
+      <h2>Plumbing services, priced before we start</h2>
+      <p>Every job starts with a flat-rate quote at your door. Approve it and we get to work — the price doesn't move.</p>
+    </div>
+    <div class="services-grid">
+      <article class="svc reveal">
+        <div class="svc-icon"><svg width="27" height="27" viewBox="0 0 24 24" fill="none" stroke="#f4631e" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.7c3.2 3.9 6 7.3 6 10.6a6 6 0 1 1-12 0c0-3.3 2.8-6.7 6-10.6Z"/></svg></div>
+        <h3>Emergency Plumbing</h3>
+        <p>Burst pipes, major leaks, sewage backups. We dispatch within the hour, day or night, weekends included.</p>
+        <div class="svc-price">From <span>$149</span> · 24/7</div>
+        <a class="svc-link" href="#book">Get help now →</a>
+      </article>
+      <article class="svc reveal">
+        <div class="svc-icon"><svg width="27" height="27" viewBox="0 0 24 24" fill="none" stroke="#f4631e" stroke-width="1.9" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg></div>
+        <h3>Drain Cleaning</h3>
+        <p>Camera inspection first, then hydro-jetting or snaking. We show you the blockage on screen before we clear it.</p>
+        <div class="svc-price">From <span>$99</span> · same-day</div>
+        <a class="svc-link" href="#book">Book cleaning →</a>
+      </article>
+      <article class="svc reveal">
+        <div class="svc-icon"><svg width="27" height="27" viewBox="0 0 24 24" fill="none" stroke="#f4631e" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8M10 21v-3.5M14 21v-3.5M12 3a5 5 0 0 1 5 5c0 2-1 3.2-1 5H8c0-1.8-1-3-1-5a5 5 0 0 1 5-5Z"/></svg></div>
+        <h3>Water Heaters</h3>
+        <p>Repair or replacement of tank and tankless units. Most replacements finished the same day, old unit hauled away free.</p>
+        <div class="svc-price">Install from <span>$1,450</span></div>
+        <a class="svc-link" href="#book">Get a quote →</a>
+      </article>
+      <article class="svc reveal">
+        <div class="svc-icon"><svg width="27" height="27" viewBox="0 0 24 24" fill="none" stroke="#f4631e" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg></div>
+        <h3>Leak Detection</h3>
+        <p>Acoustic and thermal-camera detection finds hidden leaks without tearing up your floors or yard.</p>
+        <div class="svc-price">From <span>$129</span> · non-invasive</div>
+        <a class="svc-link" href="#book">Find my leak →</a>
+      </article>
+      <article class="svc reveal">
+        <div class="svc-icon"><svg width="27" height="27" viewBox="0 0 24 24" fill="none" stroke="#f4631e" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21V8l8-5 8 5v13"/><path d="M9 21v-6h6v6"/></svg></div>
+        <h3>Bathroom &amp; Kitchen</h3>
+        <p>Faucets, toilets, showers, garbage disposals and full rough-in for remodels — installed clean and level.</p>
+        <div class="svc-price">From <span>$119</span> per fixture</div>
+        <a class="svc-link" href="#book">Plan my project →</a>
+      </article>
+      <article class="svc reveal">
+        <div class="svc-icon"><svg width="27" height="27" viewBox="0 0 24 24" fill="none" stroke="#f4631e" stroke-width="1.9" stroke-linecap="round"><path d="M3 12h4l2.5-6 4 12L16 12h5"/></svg></div>
+        <h3>Repipes &amp; Gas Lines</h3>
+        <p>Whole-home repipes in PEX or copper, and certified gas line installation and pressure testing.</p>
+        <div class="svc-price">Free <span>in-home estimate</span></div>
+        <a class="svc-link" href="#book">Request estimate →</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- EMERGENCY BAND -->
+<section class="emergency">
+  <div class="wrap">
+    <div>
+      <h2>Water where it shouldn't be?</h2>
+      <p>Shut off your main valve and call us — a tech can be at your door in under 2 hours, anywhere in Austin.</p>
+    </div>
+    <a class="btn btn-white" href="tel:+15125550147">Call (512) 555-0147 Now</a>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section class="block why" id="why">
+  <div class="wrap">
+    <div class="why-media reveal">
+      <img src="faucet.jpg" alt="RapidFlow technician installing a modern chrome kitchen faucet">
+    </div>
+    <div class="reveal">
+      <p class="eyebrow">Why RapidFlow</p>
+      <h2>The plumber your neighbors already call</h2>
+      <ul class="why-list">
+        <li>
+          <span class="ck"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#1d7a43" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+          <div><strong>You approve the price first.</strong>
+          <p>Flat-rate quote before work begins. If we find something extra, you hear about it before — never after.</p></div>
+        </li>
+        <li>
+          <span class="ck"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#1d7a43" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+          <div><strong>Background-checked, uniformed techs.</strong>
+          <p>You get your technician's name and photo by text before they arrive. Shoe covers on, drop cloths down, mess cleaned up.</p></div>
+        </li>
+        <li>
+          <span class="ck"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#1d7a43" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+          <div><strong>Stocked trucks, one-visit fixes.</strong>
+          <p>Our vans carry 400+ parts, so 9 out of 10 jobs are finished on the first visit — no "we'll have to come back Tuesday."</p></div>
+        </li>
+        <li>
+          <span class="ck"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#1d7a43" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+          <div><strong>2-year warranty, in writing.</strong>
+          <p>Parts and labor covered for two full years. If our work fails, we come back and make it right for free.</p></div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- STEPS -->
+<section class="block steps">
+  <div class="wrap">
+    <div class="sec-head center reveal">
+      <p class="eyebrow">How It Works</p>
+      <h2>Fixed in three simple steps</h2>
+    </div>
+    <div class="steps-grid">
+      <div class="step reveal"><div class="s-num">01</div><h3>Call or Book Online</h3><p>Tell us what's happening. A real person answers 24/7 and gives you a 2-hour arrival window — plus a text when your tech is on the way.</p></div>
+      <div class="step reveal"><div class="s-num">02</div><h3>Approve a Flat-Rate Quote</h3><p>Your technician inspects the problem, shows you the options and the exact price for each. No work starts until you say go.</p></div>
+      <div class="step reveal"><div class="s-num">03</div><h3>We Fix It, Guaranteed</h3><p>We complete the repair, test everything twice, clean up, and back it with a 2-year warranty. Pay by card, check or financing.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section class="block" id="pricing">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow">Honest Pricing</p>
+      <h2>What common jobs actually cost</h2>
+      <p>No hourly billing, no "we'll see when we open it up." These are real starting prices for Austin homes.</p>
+    </div>
+    <div class="pricing-grid">
+      <div class="price-card reveal">
+        <div class="p-job">Drain Cleaning</div>
+        <div class="p-amt">$99 <small>from</small></div>
+        <p>Camera inspection included. Most kitchen and bathroom drains cleared in under an hour.</p>
+      </div>
+      <div class="price-card reveal">
+        <div class="p-job">Water Heater Install</div>
+        <div class="p-amt">$1,450 <small>from</small></div>
+        <p>50-gallon tank, permits handled, old unit hauled away. 6-year tank warranty included.</p>
+      </div>
+      <div class="price-card reveal">
+        <div class="p-job">Leak Detection</div>
+        <div class="p-amt">$129 <small>flat</small></div>
+        <p>Acoustic + thermal imaging. You get photos and a written report for insurance if you need it.</p>
+      </div>
+    </div>
+    <p class="pricing-note">Final quote is always confirmed at your door before work begins — and it never goes up mid-job.</p>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="block reviews" id="reviews">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow" style="color:#ffb287">Customer Reviews</p>
+      <h2>Rated 4.9 out of 5 across Austin</h2>
+      <p>Sample reviews shown in the style of our Google profile.</p>
+    </div>
+    <div class="reviews-grid">
+      <article class="rev reveal">
+        <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <p>"Water heater died on a Sunday morning. They answered on the second ring, quoted me over the phone, and we had hot water again by lunch. Price was exactly what they said."</p>
+        <div class="rev-who"><span class="avatar" aria-hidden="true">MR</span><div><div class="rw-name">Melissa R.</div><div class="rw-meta">Round Rock · Water heater</div></div></div>
+      </article>
+      <article class="rev reveal">
+        <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <p>"Three other companies wanted to dig up my yard for a 'broken sewer line.' RapidFlow ran a camera, found a root ball, jetted it out. Saved me thousands — honest people."</p>
+        <div class="rev-who"><span class="avatar" aria-hidden="true">JT</span><div><div class="rw-name">James T.</div><div class="rw-meta">Cedar Park · Drain cleaning</div></div></div>
+      </article>
+      <article class="rev reveal">
+        <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <p>"They texted me the tech's photo before he arrived, wore shoe covers, and laid down cloths everywhere. The leak under our sink was fixed in 40 minutes. This is how it should be."</p>
+        <div class="rev-who"><span class="avatar" aria-hidden="true">AS</span><div><div class="rw-name">Ana S.</div><div class="rw-meta">South Austin · Leak repair</div></div></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- AREA + FAQ -->
+<section class="block area-faq" id="faq">
+  <div class="wrap">
+    <div class="reveal">
+      <p class="eyebrow">Service Area</p>
+      <h2>Serving greater Austin</h2>
+      <p style="color:var(--muted);margin-top:10px">Based in South Austin, with stocked trucks staged across the metro so help is never far away.</p>
+      <img src="technician.jpg" alt="RapidFlow technician standing in front of a service van" style="border-radius:14px;box-shadow:var(--shadow-s);margin-top:22px;aspect-ratio:16/9;object-fit:cover;width:100%">
+      <div class="area-chips">
+        <span>Downtown Austin</span><span>Round Rock</span><span>Cedar Park</span><span>Pflugerville</span><span>Georgetown</span><span>Leander</span><span>San Marcos</span><span>Lakeway</span><span>Westlake</span><span>Mueller</span><span>Zilker</span><span>+ nearby areas</span>
+      </div>
+    </div>
+    <div class="reveal">
+      <p class="eyebrow">Common Questions</p>
+      <h2 style="margin-bottom:24px">Before you call</h2>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">How fast can you get here in an emergency?<span class="fx">+</span></button>
+        <div class="faq-a"><p>Our average emergency arrival in the Austin metro is under 2 hours, 24/7. When you call, the dispatcher gives you a real arrival window — not a vague "sometime today."</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Do you charge for estimates?<span class="fx">+</span></button>
+        <div class="faq-a"><p>Diagnosis visits are $49, and that fee is waived completely when you approve the repair. Repipe and remodel estimates are free.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">What does the 2-year warranty cover?<span class="fx">+</span></button>
+        <div class="faq-a"><p>All parts we install and all of our labor, for two full years. If a repair we did fails in that window, we return and fix it at no charge.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Are your plumbers licensed and insured?<span class="fx">+</span></button>
+        <div class="faq-a"><p>Yes. RapidFlow operates under Texas Master Plumber License #M-42817, every technician is background-checked, and we carry full liability insurance.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Can I get a price over the phone?<span class="fx">+</span></button>
+        <div class="faq-a"><p>For common jobs — drain cleaning, disposals, standard water heaters — yes, we quote right on the call. For hidden problems like leaks, we confirm the exact flat rate at your door before starting.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BOOKING -->
+<section class="block booking" id="book">
+  <div class="wrap">
+    <div class="reveal">
+      <p class="eyebrow">Book a Visit</p>
+      <h2>Tell us what's going on</h2>
+      <p style="color:var(--muted);margin-top:10px">Send the form and we'll call you back within 15 minutes during service hours (7 AM – 10 PM) to confirm your window. For emergencies, calling is faster.</p>
+      <ul class="book-points">
+        <li><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#f4631e" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> No obligation — the quote is free to decline</li>
+        <li><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#f4631e" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> 2-hour arrival windows, with a text when we're close</li>
+        <li><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#f4631e" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Pay by card, check, or 0% financing on larger jobs</li>
+      </ul>
+      <p style="margin-top:26px;font-weight:700;color:var(--ink);font-size:19px">Prefer to talk? <a href="tel:+15125550147" style="color:var(--orange);text-decoration:none">(512) 555-0147</a></p>
+    </div>
+    <form class="book reveal" id="bookForm" novalidate>
+      <h3>Request a callback</h3>
+      <p class="f-sub">Takes 30 seconds. We never share your details.</p>
+      <div class="f-row">
+        <div class="f-group">
+          <label for="fName">Your name</label>
+          <input id="fName" name="name" type="text" placeholder="Jordan Miller" required>
+        </div>
+        <div class="f-group">
+          <label for="fPhone">Phone</label>
+          <input id="fPhone" name="phone" type="tel" placeholder="(512) 555-0100" required>
+        </div>
+      </div>
+      <div class="f-group">
+        <label for="fService">What do you need?</label>
+        <select id="fService" name="service" required>
+          <option value="">Choose a service…</option>
+          <option>Emergency repair</option>
+          <option>Drain cleaning</option>
+          <option>Water heater</option>
+          <option>Leak detection</option>
+          <option>Bathroom / kitchen fixture</option>
+          <option>Repipe or gas line</option>
+          <option>Something else</option>
+        </select>
+      </div>
+      <div class="f-group">
+        <label for="fMsg">Tell us a little more <span style="color:var(--muted);font-weight:500">(optional)</span></label>
+        <textarea id="fMsg" name="message" rows="3" placeholder="e.g. Kitchen sink drains slowly and gurgles at night…"></textarea>
+      </div>
+      <button class="btn btn-call" type="submit">Request My Callback</button>
+      <div class="form-ok" id="formOk" role="status">Thanks — your request is in. We'll call you back within 15 minutes during service hours to confirm your window.</div>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h4>RapidFlow Plumbing Co.</h4>
+        <p style="font-size:15px;max-width:32em">Family-owned Austin plumbing company. Licensed, insured, and at your door the same day — with the price agreed before we pick up a wrench.</p>
+        <p style="margin-top:14px;font-size:15px">TX Master Plumber Lic. #M-42817</p>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">Emergency plumbing</a></li>
+          <li><a href="#services">Drain cleaning</a></li>
+          <li><a href="#services">Water heaters</a></li>
+          <li><a href="#services">Leak detection</a></li>
+          <li><a href="#services">Repipes &amp; gas lines</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#why">Why choose us</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#faq">Service area &amp; FAQ</a></li>
+          <li><a href="#book">Book a visit</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+15125550147">(512) 555-0147</a> — 24/7</li>
+          <li>Mon–Sun · Emergency line always open</li>
+          <li>4210 S Congress Ave, Austin, TX 78745</li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© <span id="year">2026</span> RapidFlow Plumbing Co. All rights reserved.</span>
+      <span class="demo-note">Concept website designed &amp; built by Hafeez Shoukat as a portfolio demonstration.</span>
+    </div>
+  </div>
+</footer>
+
+<div class="callbar">
+  <a class="cb-call" href="tel:+15125550147">Call Now</a>
+  <a class="cb-book" href="#book">Book Online</a>
+</div>
+
+<script>
+(function(){
+  var header=document.getElementById('siteHeader');
+  window.addEventListener('scroll',function(){header.classList.toggle('scrolled',window.scrollY>8);},{passive:true});
+
+  var burger=document.getElementById('burger'),links=document.getElementById('navLinks');
+  burger.addEventListener('click',function(){
+    var open=links.classList.toggle('open');
+    burger.setAttribute('aria-expanded',open?'true':'false');
+  });
+  links.addEventListener('click',function(e){if(e.target.tagName==='A'){links.classList.remove('open');burger.setAttribute('aria-expanded','false');}});
+
+  document.querySelectorAll('.faq-item').forEach(function(item){
+    var q=item.querySelector('.faq-q'),a=item.querySelector('.faq-a');
+    q.addEventListener('click',function(){
+      var isOpen=item.classList.contains('open');
+      document.querySelectorAll('.faq-item.open').forEach(function(o){o.classList.remove('open');o.querySelector('.faq-a').style.maxHeight=null;o.querySelector('.faq-q').setAttribute('aria-expanded','false');});
+      if(!isOpen){item.classList.add('open');a.style.maxHeight=a.scrollHeight+'px';q.setAttribute('aria-expanded','true');}
+    });
+  });
+
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(en){if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target);}});
+  },{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
+
+  var form=document.getElementById('bookForm');
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    var name=document.getElementById('fName'),phone=document.getElementById('fPhone'),svc=document.getElementById('fService');
+    var valid=true;
+    [name,phone,svc].forEach(function(f){
+      if(!f.value.trim()){valid=false;f.style.borderColor='#c0392b';}else{f.style.borderColor='';}
+    });
+    if(!valid)return;
+    document.getElementById('formOk').classList.add('show');
+    form.querySelector('button[type=submit]').textContent='Request Received ✓';
+  });
+
+  document.getElementById('year').textContent=new Date().getFullYear();
+})();
+</script>
+</body>
+</html>
